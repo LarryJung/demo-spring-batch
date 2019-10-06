@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  mysql-development:
+    image: mysql:8.0.17
+    environment:
+      MYSQL_ROOT_PASSWORD: db1004
+      MYSQL_DATABASE: spring_batch
+      MYSQL_USER: charry
+      MYSQL_PASSWORD: db1004
+    ports:
+      - "3306:3306"

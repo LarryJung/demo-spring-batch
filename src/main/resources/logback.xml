@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="180 seconds">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- level DEBUG log output -->
+    <logger name="com.larry.hellobatch" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <root>
+        <level value="ERROR" />
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>
